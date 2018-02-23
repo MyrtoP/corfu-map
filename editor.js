@@ -8,12 +8,17 @@ function init() {
   // Initialise the map.zoom set to 14 and added menu slide button
   map = new google.maps.Map(document.getElementById('map-holder'), {
     center: {lat: 39.6249838, lng: 19.922346100000027},
-    zoom: 14,
+    zoom: 14,  
     mapTypeControl: false,
     streetViewControl: false,
-    fullscreenControl: false,
-    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-    mapTypeIds: ['roadmap', 'terrain','satellite']
+    fullscreenControl: true, //enable full screen control
+    mapTypeControl: true,    //enable map option control
+    mapTypeControlOptions: {
+       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,   //add dropdown menu for the map style
+       position: google.maps.ControlPosition.TOP_CENTER,       //menu on top center of the map
+       mapTypeIds: ['roadmap', 'terrain','satellite']
+    }  
+	  
   });
 	
   map.data.setControls(['Point', 'LineString', 'Polygon']);
