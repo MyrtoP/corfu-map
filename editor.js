@@ -18,6 +18,16 @@ function init() {
        position: google.maps.ControlPosition.TOP_LEFT,       //menu on top center of the map
        mapTypeIds: ['satellite','roadmap']
   });
+	  
+	  
+  marker = new google.maps.Marker({
+          map: map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 39.6249838, lng: 19.922346100000027}
+        });
+  marker.addListener('click', toggleBounce);
+	  
 	
   map.data.setControls(['Point', 'LineString', 'Polygon']);
   map.data.setStyle({
@@ -25,6 +35,14 @@ function init() {
     draggable: true,
     clickable: true
   });
+
+ function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
 
 	
   bindDataLayerListeners(map.data);
