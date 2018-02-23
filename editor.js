@@ -16,7 +16,8 @@ function init() {
     mapTypeControlOptions: {
        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,   //add dropdown menu for the map style
        position: google.maps.ControlPosition.TOP_CENTER,       //menu on top center of the map
-       mapTypeId: ['roadmap', 'terrain','satellite']
+       mapTypeId: ['roadmap', 'terrain'],
+       mapTypeId: ['satellite']
     }  
 	  
   });
