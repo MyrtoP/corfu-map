@@ -20,14 +20,14 @@ function init() {
   });
 	  
 	  
-  marker = new google.maps.Marker({
+ /* marker = new google.maps.Marker({
           map: map,
           draggable: true,
           animation: google.maps.Animation.DROP,
           position: {lat: 39.6249838, lng: 19.922346100000027}
         });
   marker.addListener('click', toggleBounce);
-	  
+	  */
 	
   map.data.setControls(['Point', 'LineString', 'Polygon']);
   map.data.setStyle({
@@ -36,7 +36,7 @@ function init() {
     clickable: true
   });
 
- function toggleBounce() {
+/* function toggleBounce() {
         if (marker.getAnimation() !== null) {
           marker.setAnimation(null);
         } else {
@@ -44,7 +44,7 @@ function init() {
         }
       }
 
-	
+	*/
   bindDataLayerListeners(map.data);
 
   // Retrieve HTML elements.
