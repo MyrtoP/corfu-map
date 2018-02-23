@@ -17,8 +17,6 @@ function init() {
        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,   //add dropdown menu for the map style
        position: google.maps.ControlPosition.TOP_LEFT,       //menu on top center of the map
        mapTypeIds: ['satellite','roadmap']
-    }  
-	  
   });
 	
   map.data.setControls(['Point', 'LineString', 'Polygon']);
@@ -28,6 +26,7 @@ function init() {
     clickable: true
   });
 
+	
   bindDataLayerListeners(map.data);
 
   // Retrieve HTML elements.
