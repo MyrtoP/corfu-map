@@ -15,9 +15,8 @@ function init() {
     mapTypeControl: true,    //enable map option control
     mapTypeControlOptions: {
        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,   //add dropdown menu for the map style
-       position: google.maps.ControlPosition.TOP_CENTER,       //menu on top center of the map
-      // mapTypeIds: ['roadmap', 'terrain'],
-       mapTypeIds: ['terrain','satellite']
+       position: google.maps.ControlPosition.TOP_LEFT,       //menu on top center of the map
+       mapTypeIds: ['roadmap','satellite']
     }  
 	  
   });
