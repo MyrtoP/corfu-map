@@ -8,7 +8,7 @@ function init() {
   // Initialise the map.zoom set to 14 and added menu slide button
   map = new google.maps.Map(document.getElementById('map-holder'), {
     center: {lat: 39.6249838, lng: 19.922346100000027},
-    zoom: 13,  
+    zoom: 14,  
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: true, //enable full screen control
