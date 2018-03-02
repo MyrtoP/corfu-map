@@ -28,8 +28,7 @@ function init() {
   });
 
 	// DINATOTITA DIAGRAFIS TOU MONOPATIOU 3 erotima
-/*https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu 
-k 2 erotima https://developers.google.com/maps/documentation/javascript/examples/rectangle-event*/
+/*https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu */
   bindDataLayerListeners(map.data);
 
   // Retrieve HTML elements.
