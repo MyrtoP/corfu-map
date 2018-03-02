@@ -11,7 +11,7 @@ function init() {
     zoom: 14,  
     mapTypeControl: false,
     streetViewControl: false,
-    fullscreenControl: true, //enable full screen control
+    fullscreenControl: false, 
     mapTypeControl: true,    //enable map option control
     mapTypeControlOptions: {
        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,   //add dropdown menu for the map style
