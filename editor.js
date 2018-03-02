@@ -19,15 +19,6 @@ function init() {
        mapTypeIds: ['satellite','roadmap']
   });
 	  
-	  
- /* marker = new google.maps.Marker({
-          map: map,
-          draggable: true,
-          animation: google.maps.Animation.DROP,
-          position: {lat: 39.6249838, lng: 19.922346100000027}
-        });
-  marker.addListener('click', toggleBounce);
-	  */
 	
   map.data.setControls(['Point', 'LineString', 'Polygon']);
   map.data.setStyle({
@@ -37,9 +28,8 @@ function init() {
   });
 
 	// DINATOTITA DIAGRAFIS TOU MONOPATIOU 3 erotima
-/*https://developers.google.com/maps/documentation/javascript/examples/polyline-remove
-	https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu 
-	k 2 erotima https://developers.google.com/maps/documentation/javascript/examples/rectangle-event*/
+/*https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu 
+k 2 erotima https://developers.google.com/maps/documentation/javascript/examples/rectangle-event*/
   bindDataLayerListeners(map.data);
 
   // Retrieve HTML elements.
@@ -69,4 +59,3 @@ function bindDataLayerListeners(dataLayer) {
   dataLayer.addListener('removefeature', refreshGeoJsonFromData);
   dataLayer.addListener('setgeometry', refreshGeoJsonFromData);
 }
-//https://www.w3schools.com/howto/howto_js_sidenav.asp
