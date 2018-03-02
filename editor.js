@@ -36,15 +36,9 @@ function init() {
     clickable: true
   });
 
-/* function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-      }
-
-	*/
+	// DINATOTITA DIAGRAFIS TOU MONOPATIOU
+/*https://developers.google.com/maps/documentation/javascript/examples/polyline-remove
+	https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu */
   bindDataLayerListeners(map.data);
 
   // Retrieve HTML elements.
