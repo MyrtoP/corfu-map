@@ -36,9 +36,10 @@ function init() {
     clickable: true
   });
 
-	// DINATOTITA DIAGRAFIS TOU MONOPATIOU
+	// DINATOTITA DIAGRAFIS TOU MONOPATIOU 3 erotima
 /*https://developers.google.com/maps/documentation/javascript/examples/polyline-remove
-	https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu */
+	https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu 
+	k 2 erotima https://developers.google.com/maps/documentation/javascript/examples/rectangle-event*/
   bindDataLayerListeners(map.data);
 
   // Retrieve HTML elements.
