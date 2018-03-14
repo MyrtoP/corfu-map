@@ -8,7 +8,7 @@ function init() {
   // Initialise the map.
   map = new google.maps.Map(document.getElementById('map-holder'), {
     center: {lat: 39.6249838, lng: 19.922346100000027},
-    zoom: 14,
+    zoom: 13,
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
@@ -62,10 +62,10 @@ function bindDataLayerListeners(dataLayer) {
 // Enable geojson output with the click of the button
 function geojsonOutput() {
     var show = document.getElementById("geojson-output");
-    if (show.style.display === "none") {
-        show.style.display = "block";
+    if (show.style.display === "block") {
+        show.style.display = "none" ;
     } else {
-        show.style.display = "none";
+        show.style.display = "block";
     }
 }
 

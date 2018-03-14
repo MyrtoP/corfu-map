@@ -41,17 +41,17 @@ body {
 /*style the 'Geojson output' button*/
 #geo-toggle{          
     position: absolute;
-    top: 39px;
+    top: 69px;
     right: 20px;
-    z-index: 100;
+    z-index:100; 
 }
 
 /*delete paths button style*/
 #deletepaths{
   position: absolute;
-  top: 69px;
-  right: 20px;
-  z-index:100; 
+   top: 39px;
+    right: 20px;
+    z-index: 100;
 }
 
 
