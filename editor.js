@@ -16,6 +16,7 @@ function init() {
   });
 	
   map.data.setControls(['Point', 'LineString', 'Polygon']);
+  
   map.data.setStyle({
     editable: true,
     draggable: true,
@@ -23,6 +24,10 @@ function init() {
   });
 
   bindDataLayerListeners(map.data);
+  
+  
+// load the geoJson file 
+map.data.loadGeoJson("data/2016030.geojson");
 
   // Retrieve HTML elements.
   var mapContainer = document.getElementById('map-holder');
@@ -52,4 +57,20 @@ function bindDataLayerListeners(dataLayer) {
   dataLayer.addListener('addfeature', refreshGeoJsonFromData);
   dataLayer.addListener('removefeature', refreshGeoJsonFromData);
   dataLayer.addListener('setgeometry', refreshGeoJsonFromData);
+}
+
+// Enable geojson output with the click of the button
+function geojsonOutput() {
+    var show = document.getElementById("geojson-output");
+    if (show.style.display === "none") {
+        show.style.display = "block";
+    } else {
+        show.style.display = "none";
+    }
+}
+
+//Delete paths
+function deletepaths(){
+  map.data.forEach(function(e){map.data.remove(e);});
+  geoJsonOutput.value=null;
 }

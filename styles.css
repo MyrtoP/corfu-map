@@ -20,8 +20,8 @@ body {
 }
 
 #geojson-output {
+  position: absolute; 
   width: 100%;
-  position: absolute;
   -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
   -moz-box-sizing: border-box; /* FF1+ */
   box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
@@ -38,9 +38,20 @@ body {
   z-index:100;
 }
 
-#myFunction{          /*style the 'click me' button*/
+/*style the 'Geojson output' button*/
+#geo-toggle{          
     position: absolute;
-    top: 0px;
-    right: 700px;
+    top: 39px;
+    right: 20px;
     z-index: 100;
 }
+
+/*delete paths button style*/
+#deletepaths{
+  position: absolute;
+  top: 69px;
+  right: 20px;
+  z-index:100; 
+}
+
+

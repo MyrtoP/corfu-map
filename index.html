@@ -9,10 +9,10 @@
     <script src="editor.js"></script>
   </head>
   <body>
-    <button onclick="geojsonOutput()" id="myFunction" class="btn btn-warning">Click me</button>
-    <div id="geojson-output"></div>
+    <div id="map-holder"></div>
     <textarea id="geojson-output" placeholder="See edits in GeoJson."></textarea>
-	<div id="map-holder"></div>
-	<a id="download-link" href="data:;base64," download="geojson.json"><button>Download GeoJson</button></a>
+    <button onclick="geojsonOutput()" id="geo-toggle" class="btn btn-warning">GeoJson output</button>
+    <button onclick="deletepaths()" id="deletepaths" >Delete All paths</button>
+  	<a id="download-link" href="data:;base64," download="geojson.json"><button>Download GeoJson</button></a>
   </body>
 </html>
