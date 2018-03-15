@@ -13,13 +13,14 @@ body {
   overflow-y: auto;
 }
 
-/* Map styles. */
+/* Map styles. */ 
 #map-holder {
   height: 100%;
   width: 100%;
 }
 
 #geojson-output {
+  position: absolute; 
   width: 100%;
   -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
   -moz-box-sizing: border-box; /* FF1+ */
@@ -27,11 +28,30 @@ body {
   border: none;
   resize: none;
   background-color: #F1F1F1;
-  display: none;
+  display: block;
 }
+
 #download-link {
   position: absolute;
   top:10px;
   right:10px;
   z-index:100;
 }
+
+/*style the 'Geojson output' button*/
+#geo-toggle{          
+    position: absolute;
+    top: 69px;
+    right: 20px;
+    z-index:100; 
+}
+
+/*delete paths button style*/
+#deletepaths{
+  position: absolute;
+   top: 39px;
+    right: 20px;
+    z-index: 100;
+}
+
+
